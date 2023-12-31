@@ -1,0 +1,3639 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* O en tu contenedor principal */
+.main-container {
+    margin: 0;
+    padding: 0;
+}
+.carousel {
+    position: relative;
+    top: 0px; /* Altura deseada desde la parte superior */
+    left: 0;
+    width: 100%;
+    height: 620px;
+    overflow: hidden;
+    z-index: 1; /* Asegura que el carrusel esté detrás del contenido */
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.active {
+    opacity: 1;
+}
+.container {
+    position: relative;
+}
+
+.Titulo {
+    position: absolute;
+    top: 150px; /* Ajusta la posición vertical */
+    left: 50%; /* Coloca el título a la mitad del ancho */
+    transform: translateX(-50%); /* Centra el título horizontalmente */
+    z-index: 1; /* Asegura que esté sobre los slides */
+    padding: 10px; /* Ajusta el espacio alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo con opacidad */
+    border-radius: 10px; /* Redondea las esquinas */
+}
+
+/*BOTON N° 1 EN TITULO */
+#Boton1 {
+    position: absolute;
+    padding: 0px 0px;
+    border: none;
+    background-color: transparent;
+    top: 480px; /* Ajusta la posición vertical */
+    left: 50%; /* Ajusta la posición horizontal */
+    transform: translateX(-50%);
+    z-index: 2;
+    cursor: pointer;
+    }
+
+#allBotones {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 87.5%
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#allBotones.fixed {
+    position: fixed; /* Fija el elemento en la parte superior */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
+}
+.boton2 {
+    width: auto; /* Cambiado para que el ancho sea automático */
+    margin: 5px; /* Reduciendo el margen entre botones */
+    padding: 10px 20px; /* Ajustando el espacio dentro de los botones */
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 15px;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #404040 !important;
+}
+
+.boton2:hover {
+    background-color: rgba(224, 78, 97, 0.774) !important;
+}
+
+
+
+
+#quienesSomos {
+    max-width: 100%;
+    position: relative;
+    background-image: url("background_section/background.jpg");
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Para evitar que los elementos salgan del contenedor */
+}
+.TituloQuienesSomos {
+    margin-top: 5%;
+    margin-bottom: 6%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 250%;
+    color: white;
+    padding: 20px;
+    background-color: rgba(17, 15, 15, 0.5);
+    
+}
+
+.subTitulo {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 230%;
+    color: white;
+    padding: 20px;
+    background-color: rgba(17, 15, 15, 0.5);
+    
+}
+
+
+.imagne_bajo-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff; /* Ancho y color del borde */
+    padding: 20px; /* Espaciado interno */
+    background: rgba(0, 0, 0, 0.5); /* Color de fondo semi transparente */
+    margin: 0 auto;
+    margin-bottom: 312.5%;
+}
+
+.imagne_bajo-subtitle img {
+    width: 100%;
+    max-width: ; /* Ajusta el ancho máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+
+
+#quienesSomosTitle {
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    font-family: Times New Roman;
+    font-size: 150% ;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.767);
+    margin-bottom:  5%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin: 20px auto !important; /* Margen vertical de 20px y horizontal automático */
+}
+
+.contenido{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+
+}
+.container_texto img {
+    margin-left: 10%; 
+    width: 100%;
+    max-width: 40%;
+    height: auto; /* Ajuste la altura para mantener la proporción */
+    margin-bottom: 10%; /* Aproximación a 150px */
+}
+
+
+.Texto_QuienesSomos{
+    width: 80%;
+    max-width: 100%;
+    margin-left: 10%;
+    flex: 1;
+    text-align: justify;
+    max-width: 30%;
+    margin-bottom: 10%;
+    color: white;
+    padding: 15px;
+    background-color: rgba(17, 15, 15, 0.5);
+    font-size: 24px;
+    font-family: Times New Roma;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección de los elementos a columna */
+    align-items: flex-start;
+    overflow: hidden; /* Clearfix para contener los elementos flotantes */
+}
+
+.titleParrafo2 { /*Titulo Que hacemos*/
+    margin-left: 65%;
+    align-items: center;
+    width: 100%;
+    max-width: 30%;
+    position: relative;
+    font-family:Times New Roman;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.767);
+    margin-bottom: 20px;
+}
+
+.parrafo2{
+    justify-self: first baseline;
+    width: 100%;
+    max-width: 50%;
+    flex: 1;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: justify;
+    margin-bottom: 1px;
+    color: white;
+    padding: 15px;
+    background-color: rgba(17, 15, 15, 0.5);
+    font-size: 24px;
+    font-family:Times New Roman;
+}
+
+
+.text-content {
+    width: 60%; /* Ancho del contenido de texto */
+    float: left; /* Flotar a la izquierda */
+}
+
+.image {
+    margin-top: -60%;
+    margin-right: -40%;
+    width: 100%; /* Ancho del contenedor de imágenes */
+    float: right; /* Flotar a la derecha */
+}
+
+.imagenQueHacemos2 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+.imagenQueHacemos1{
+    width: 100%; /* Ajustar el ancho de las imágenes */
+    max-width: 50%;
+    display: block; /* Mostrar como bloque para evitar espacios adicionales */ 
+    margin-bottom: 50px !important;
+}
+.imagenQueHacemos2 {
+    width: 100%; /* Ajustar el ancho de las imágenes */
+    max-width: 50%;
+    display: block; /* Mostrar como bloque para evitar espacios adicionales */ 
+    margin-bottom: 200px !important;
+    
+}
+
+/* Estilos base para los elementos sticky */
+
+.TituloQuienesSomos,
+.subTitulo,
+#quienesSomosTitle {
+    position: sticky;
+    z-index: 1;
+}
+
+/* Estilos para el contenedor del mapa */
+.imagen_bajo-subtitle {
+    width: 100%; /* Ancho del contenedor */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    margin-bottom: 30px; /* Espacio inferior */
+}
+
+/* Estilos para el iframe del mapa */
+.imagen_bajo-subtitle iframe {
+    width: 100%; /* Ancho del iframe dentro del contenedor */
+    height: 400px; /* Altura del iframe */
+    border: 1px solid #ccc; /* Borde del iframe */
+    border-radius: 8px; /* Borde redondeado */
+}
+
+
+/* Estilos específicos para diferentes tamaños de pantalla */
+
+#galeria{
+    margin-top: 0 !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-image: url("background_section/background.jpg");
+}
+
+.galeriaFotos{
+    
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    font-family:"Time new roman";
+    font-size: 24px;
+    color: white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.767);
+    max-width: 30%;
+}
+
+.text-galeri-space{
+    max-width: 50%;
+    font-family: initial;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center; /* Alineación del texto */
+    margin-top: 10px; /* Espacio en la parte superior */
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border: 2px solid #000000; /* Borde sólido de 2px de ancho en color gris (#999) */
+    padding: 20px; /* Espaciado interno para separar el texto del borde */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+#cuerpo{
+    display: flex;
+    padding: 0 30px;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.containerC{
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+
+.containerC i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+
+}
+
+.containerC i:hover{
+    background: #f2f2f2;
+}
+
+.containerC .carouselGaleria{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    
+}
+.carouselGaleria.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carouselGaleria.dragging img{
+    pointer-events: none;
+}
+
+.carouselGaleria{
+    display: flex;
+    position: relative;
+}
+.carouselGaleria img{
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width:calc(100%/3);
+}
+
+.carouselGaleria img:first-child{
+    margin-left: 0px;
+}
+.containerC i:last-child{
+    right: -23px;
+}
+
+.containerC i:first-child{
+    left: -23px;
+    z-index: 10;
+}
+
+.imagenContactoFondo {
+    position: relative;
+    background-image: url("imagenContacto/imageContacto.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 25em;
+    z-index: 10;
+    overflow: hidden; /* Asegura que los puntos no se desborden */
+  }
+
+ .imagenContactoFondo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(5, 5, 5, 0.329) 10px, transparent 10px); /* Gradiente de puntos negros con opacidad 0.5 */
+    background-size: 10px 10px; /* Tamaño más pequeño de los puntos */
+    mix-blend-mode: multiply; /* Mez*/
+}
+
+.titlecontacts{
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.767);
+    max-width: 30%;
+    
+}
+
+.text-contact-space {
+    width: 50%;
+    font-family: initial;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-align: center; /* Alineación del texto */
+    margin-top: 10px; /* Espacio en la parte superior */
+    padding-bottom: 5%;
+    padding-top: 5%;
+    border: 2px solid #000000; /* Borde sólido de 2px de ancho en color gris (#999) */
+    padding: 20px; /* Espaciado interno para separar el texto del borde */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 50%;
+    display: block;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 200%;
+    /*Mover a disposicion*/
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  
+}
+  
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 100px;
+    transition: .5s;
+    margin-top: 250px;
+}
+  
+ul li a span {
+    position: absolute;
+    transition: transform .5s;
+}
+  
+ul li a span:nth-child(1),
+ul li a span:nth-child(3) {
+    width: 100%;
+    height: 3px;
+    background: white;
+}
+  
+ul li a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+  
+ul li a:hover span:nth-child(1) {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+  
+ul li a span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+  
+ul li a:hover span:nth-child(3) {
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+  
+ul li a span:nth-child(2),
+ul li a span:nth-child(4) {
+    width: 3px;
+    height: 100%;
+    background: #404040;
+}
+  
+ul li a span:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+}
+  
+ul li a:hover span:nth-child(2) {
+    transform: scale(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+  
+ul li a span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: scale(0);
+    transform-origin: top;
+}
+  
+ul li a:hover span:nth-child(4) {
+    transform: scale(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+  
+.facebook:hover {
+    color: #3b5998;
+}
+  
+.facebook:hover span {
+    background: #3b5998;
+}
+  
+.instagram:hover {
+    color: #c32aa3;
+}
+  
+.instagram:hover span {
+    background: #c32aa3;
+}
+  
+.google:hover {
+    color: green;
+}
+  
+.google:hover span {
+    background: green;
+}
+  
+ul li a .twitter {
+    color: #1da1f2;
+}
+  
+ul li a:hover:nth-child(3) {
+    color: #c32aa3;
+}
+
+ul li a:hover:nth-child(4) {
+    color: #dd4b39;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Brillo constante */
+    z-index: -1;
+}
+
+ul li a:hover::before {
+    background: rgba(224, 218, 218, 0.945); /* Incremento de brillo al pasar el mouse */
+    transition: background 0.5s ease; /* Transición suave del cambio de brillo */
+}
+
+  /* Estilos para el formulario */
+/* Estilos para el formulario */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos para los campos y etiquetas */
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    color: #333; /* Cambio de color del texto de las etiquetas */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 18px); /* Ajustar el ancho para compensar el padding */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.formularioConsultas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    background-image: url("background_section/background.jpg");
+    padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+}
+
+.titleForm {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con opacidad */
+}
+
+/* Estilos para el formulario */
+
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para el contenedor del formulario */
+.formularioConsultas {
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#formularioCons {
+    margin: 0 auto;
+    margin-left: 200px;
+    margin-top: 30px;
+
+}
+
+/* Resto de tu CSS existente... */
+
+
+.titleForm {
+    text-align: justify;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+h2 {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los campos de entrada y textarea */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #888;
+}
+
+.input-box textarea {
+    width: 100%; /* Ancho completo */
+    min-width: 100%; /* Ancho mínimo igual al 100% */
+    max-width: 100%; /* Ancho máximo igual al 100% */
+    height: 130px; /* Altura fija */
+    padding: 10px;
+    padding-left: 30px; /* Ajuste para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    resize: none; /* Evitar la redimensión */
+}
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px; /* Ajuste para el ícono */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Estilos para el botón */
+.enviar {
+    width: 100%;
+    padding: 10px;
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enviar:hover {
+    background-color: darkred;
+}
+
+.data {
+    background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    padding: 2px; /* Ajusta el espaciado interno según sea necesario */
+    max-width: 30%;
+    border-radius: 5px; /* Ajusta el radio de borde si deseas esquinas redondeadas */
+    margin: 0 auto;
+    margin-bottom: 0 !important;
+}
+
+.data p {
+    margin-bottom: 10px; /* Espacio entre los párrafos */
+}
+
+/* Estilos para los íconos */
+.data i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+/* Tus estilos anteriores */
+
+.containerMap {
+    width: 100%;
+    max-width: 30%;
+    margin-top: -30.75%; /* Ajusta el margen superior según sea necesario */
+    margin-left: 50%;
+    
+}
+
+.mapa {
+    max-width: 100%;
+    border-radius: 1rem;
+    padding: 10px;
+    background-color: rgba(209, 202, 202, 0.377);
+}
+
+
+
+.contact-section {
+    background-color:#a19386; /* Opacidad oscura */
+    background-blend-mode: overlay; /* Mezcla el color de fondo y la imagen */
+    z-index: 1;
+    position: relative;
+    height: 20vh; /* Ajusta la altura al 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-info {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre el icono y el texto */
+}
+.contact-info a{
+    color: blue; /* Cambio de color a azul */
+    text-decoration: none; /* Eliminar decoración de texto */
+}
+
+
+.contact-info i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/* Estilos para el texto de copyright */
+.copyright p {
+    color: #fff; /* Color del texto */
+    margin: 0;
+}
+
+
+/*Responsividad*/
+
+
+/**width 375*/
+/* & TERMINADO */
+@media screen and (max-width: 375px) {
+    #quienesSomosTitle {
+        max-width: 100%;
+        margin-left: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+    }
+    
+
+    #allBotones {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los botones */
+        align-items: center; /* Centra verticalmente los botones */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+    
+    .seccionBotones {
+        display: flex;
+    }
+    
+    .boton2 {
+        padding: 5px 10px; /* Ajusta el relleno */
+        margin: 0 3px !important; /* Ajusta el margen */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 18px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+
+    .subTitulo {
+        width: 100%;
+        max-width: 70%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+    
+    .imagen_bajo-subtitle {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        margin-bottom: 20px; /* Reduzco el margen inferior */
+    }
+
+    .imagen_bajo-subtitle iframe {
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        height: auto; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #quienesSomosTitle {
+        margin-left: 10px !important;
+        width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .container_texto img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.767);
+        
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 90%; /* Ancho del contenedor de imágenes */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 20px !important; /* Ajusta el margen inferior */
+        border-radius: 0 !important;
+    }
+    
+    .galeriaFotos{
+        margin-bottom: -10%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img{
+        width:calc(100%);
+        
+    }
+    .text-galeri-space{
+        margin-top: 20%;
+        margin-bottom: -10%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .text-contact-space{
+        width: 100%;
+        max-width: 80%;
+    }
+    .titlecontacts{
+        margin-top: 10px !important;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 12px;
+        transition: .5s;
+        margin-top: 60%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width:411px){
+    #quienesSomosTitle {
+        max-width: 100%;
+        margin-left: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+    }
+    
+
+    #allBotones {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los botones */
+        align-items: center; /* Centra verticalmente los botones */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+    
+    .seccionBotones {
+        display: flex;
+    }
+    
+    .boton2 {
+        padding: 5px 10px; /* Ajusta el relleno */
+        margin: 0 3px !important; /* Ajusta el margen */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 18px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+
+    .subTitulo {
+        width: 100%;
+        max-width: 70%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+    
+    .imagen_bajo-subtitle {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        margin-bottom: 20px; /* Reduzco el margen inferior */
+    }
+
+    .imagen_bajo-subtitle iframe {
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        height: auto; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #quienesSomosTitle {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido {
+        text-align: justify; /* Justifica el texto */
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_texto img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.767);
+        
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 90%; /* Ancho del contenedor de imágenes */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 20px !important; /* Ajusta el margen inferior */
+        border-radius: 0 !important;
+    }
+    
+    .galeriaFotos{
+        margin-bottom: -10%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img{
+        width:calc(100%);
+        
+    }
+    .text-galeri-space{
+        margin-top: 20%;
+        margin-bottom: -10%;
+
+    }
+    .titlecontacts{
+        margin-top: 10px !important;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 12px;
+        transition: .5s;
+        margin-top: 60%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+}
+/** width 412px */
+/* & TERMINADO */
+@media screen and (min-width:376px) and (max-width:412px)  {
+    #allBotones {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los botones */
+        align-items: center; /* Centra verticalmente los botones */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+    #quienesSomosTitle {
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+    }
+    .seccionBotones {
+        display: flex;
+    }
+    .contenido {
+        /* Estilos para el contenedor de la imagen */
+        text-align: center; /* Alinea el contenido al centro */
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      
+    .contenido img {
+        /* Estilos para la imagen dentro del contenedor */
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Mantiene la proporción original de la imagen */
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boton2 {
+        padding: 10px 10px; /* Ajusta el relleno */
+        margin: 0 3px; /* Ajusta el margen */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    .imagen_bajo-subtitle {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        margin-bottom: 20px; /* Reduzco el margen inferior */
+    }
+
+    .imagen_bajo-subtitle iframe {
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        max-height: 100%; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 18px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    .boton2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    .subTitulo {
+        width: 100%;
+        max-width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+    
+    
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+    }
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 0;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 90%;
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: justify; /* Justifica el texto */
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .imagenQueHacemos1{
+        margin-top: 10%;
+    }
+    .image img{
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .galeriaFotos{
+        width: 100%;
+        max-width: 80%;
+    }
+    .text-galeri-space{
+        margin-bottom: -20%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .text-contact-space{
+        width: 100%;
+        max-width: 80%;
+    }
+
+    .carouselGaleria img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        display: block; /* Asegura el correcto espaciado entre las imágenes */
+        
+    }
+    
+    .titlecontacts{
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 10px;
+        transition: .5s;
+        margin-top: 90%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        
+        margin-left: 10%;
+        margin-right: auto;
+    }
+    #left{
+        margin-top: 0;
+    }
+    #right{
+        margin-top: 0;
+    }
+
+}
+/** width 414px */
+/* & TERMINADO */
+@media screen and (min-width:413px) and (max-width: 414px) {
+    #allBotones {
+       display: flex;
+       justify-content: center; /* Centra horizontalmente los botones */
+       align-items: center; /* Centra verticalmente los botones */
+       overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+   }
+   
+   .seccionBotones {
+       display: flex;
+   }
+   
+   .boton2 {
+       padding: 10px 10px; /* Ajusta el relleno */
+       margin: 0 3px; /* Ajusta el margen */
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       color: #404040 !important;
+   }
+   
+   .TituloQuienesSomos {
+       width: 100%;
+       max-width: 80%;
+       display: flex;
+       flex-direction: column;
+       align-items: center; /* Centra verticalmente los elementos */
+       justify-content: center; /* Centra horizontalmente los elementos */
+       margin-top: 20px; /* Ajusta el valor según necesites */
+       font-size: 18px;
+       text-align: center; /* Centra horizontalmente el texto */
+       margin-left: auto; /* Mueve el elemento hacia la derecha */
+       margin-right: auto; /* Mueve el elemento hacia la izquierda */
+   }
+   .boton2{
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       color: #404040 !important;
+   }
+   
+   .subTitulo {
+       width: 100%;
+       max-width: 90%;
+       position: relative;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 18px;
+       color: white;
+       padding: 20px;
+       background-color: rgba(17, 15, 15, 0.5);
+       border-radius: 10px;
+       margin-top: 20px; /* Puedes ajustar este valor según necesites */
+       text-align: center; /* Centra horizontalmente el texto */
+       margin-left: auto;/* Mueve el elemento hacia la derecha */
+       margin-right: auto; /* Mueve el elemento hacia la izquierda */
+   }
+   
+   
+   .contenido {
+       display: flex;
+       flex-direction: column;
+       align-items: center; /* Centra los elementos */
+       text-align: justify; /* Justifica el texto */
+   }
+   #left{
+       margin-top: -3%;
+   }
+   #right{
+       margin-top: -3%;
+   }
+
+   #quienesSomosTitle{
+       width: 100%;
+       max-width: 80%;
+       padding-left: 10%;
+       padding-right: 10%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   .galeriaFotos{
+       width: 100%;
+       max-width: 80%;
+   }
+  
+   
+   .carouselGaleria img {
+       width: 100%; /* Ajusta el ancho al 100% del contenedor */
+       display: block; /* Asegura el correcto espaciado entre las imágenes */
+   }
+   
+   .Texto_QuienesSomos {
+       width: 90%;
+       max-width: 100%;
+       margin-left: 0;
+       color: white;
+       padding: 15px;
+       background-color: rgba(17, 15, 15, 0.5);
+       font-size: 18px;
+       font-family: 'Times New Roman', Times, serif;
+       text-align: justify; /* Justifica el texto */
+       margin-bottom: 10px;
+   }
+
+   .container2 {
+       display: flex;
+       flex-direction: column;
+       align-items: center; /* Centra los elementos */
+       overflow: hidden;
+   }
+
+   .titleParrafo2 {
+       margin-left: auto; /* Elimina el margen izquierdo */
+       margin-right: auto;
+       width: 90%;
+       max-width: 90%;
+       text-align: center; /* Centra el texto */
+       position: relative;
+       font-family: 'Times New Roman', Times, serif;
+       font-size: 24px;
+       color: white;
+       padding: 10px;
+       background-color: rgba(0, 0, 0, 0.767);
+       margin-bottom: 20px;
+   }
+
+   .parrafo2 {
+       width: 90%;
+       max-width: 90%;
+       margin-left: auto; /* Elimina el margen izquierdo */
+       margin-right: auto;
+       margin-top: 20px; /* Ajusta el margen superior */
+       text-align: justify; /* Justifica el texto */
+       color: white;
+       padding: 15px;
+       background-color: rgba(17, 15, 15, 0.5);
+       font-size: 18px; /* Ajusta el tamaño del texto */
+       font-family: 'Times New Roman', Times, serif;
+   }
+
+   .text-content {
+       width: 90%; /* Ancho del contenido de texto */
+       float: none; /* Evita el flotado para móviles */
+       margin: 0 auto; /* Centra el contenido */
+   }
+
+   .image {
+       width: 90%; /* Ancho del contenedor de imágenes */
+       float: none; /* Evita el flotado para móviles */
+       margin: 0 auto; /* Centra las imágenes */
+   }
+
+   .imagenQueHacemos2,
+   .imagenQueHacemos1 {
+       margin-top: 10px;
+       width: 100%; /* Ajusta el ancho de las imágenes */
+       display: block; /* Mostrar como bloque para evitar espacios adicionales */
+       margin-bottom: 50% ; /* Ajusta el margen inferior */
+       border-radius: 0 !important;
+   }
+   .galeriaFotos{
+       width: 100%;
+       max-width: 80%;
+   }
+   .text-galeri-space{
+    width: 100%;
+    max-width: 80%;
+       margin-top: 10%;
+       margin-bottom: -20%;
+   }
+   .text-contact-space{
+    width: 100%;
+    max-width: 80%;
+    }
+   .titlecontacts{
+       margin-top: 10px !important;
+       width: 100%;
+       max-width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   
+   ul li a {
+       display: block;
+       position: relative;
+       width: 100px;
+       height: 100px;
+       line-height: 100px;
+       font-size: 40px;
+       text-align: center;
+       text-decoration: none;
+       color: white;
+       margin: 0 10px;
+       transition: .5s;
+       margin-top: 90%;
+   }
+   .imagenContactoFondo {
+       height: 15em; /* Reducir la altura para dispositivos más pequeños */
+       background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+   }
+   .titleForm {
+       margin: 0 auto;
+       text-align: center;
+       margin-bottom: 10px; /* Reducir el margen inferior */
+       max-width: 90%; /* Reducir el ancho máximo */
+       font-size: 24px; /* Ajustar el tamaño del texto */
+       background-color: transparent; /* Eliminar la opacidad del color de fondo */
+       background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+   
+   }
+
+   #formularioCons {
+       width: 100%;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 10px; /* Ajustar el margen superior */
+   }
+
+   h2 {
+       font-size: 22px; /* Ajustar el tamaño del título */
+       margin-bottom: 20px; /* Ajustar el margen inferior */
+   }
+   .data {
+       max-width: 90%; /* Reducir el ancho máximo */
+       margin: 0 auto;
+       padding: 5px; /* Ajustar el espaciado interno */
+       border-radius: 0; /* Eliminar el borde redondeado */
+       background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+       margin-bottom: 10px; /* Ajustar el margen inferior */
+   }
+
+   .data p {
+       margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+   }
+
+   /* Estilos para los íconos */
+   .data i {
+       margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+   }
+   .formularioConsultas {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       width: 100%;
+       max-width: 100%;
+       height: 1200px;
+       background-image: url("background_section/background.jpg");
+       padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+   }
+   .containerMap {
+       width: 100%;
+       max-width: 90%; /* Reducir el ancho máximo */
+       margin: 0 auto; /* Centrar el contenedor */
+       overflow: hidden; /* Evitar desbordamiento del contenido */
+   }
+
+   .mapa {
+       width: 100%;
+       margin-top: 20px;
+       border-radius: 0.5rem; /* Reducir el radio del borde */
+       padding: 5px; /* Ajustar el espaciado interno */
+       background-color: rgba(209, 202, 202, 0.377);
+       box-sizing: border-box; /* Incluir padding en el ancho */
+       margin-bottom: 50px;
+   }
+   .contact-section {
+       background-color: #a19386; /* Color de fondo */
+       z-index: 1;
+       position: relative;
+       height: auto; /* Ajustar altura automáticamente */
+       padding: 20px; /* Añadir espaciado interno */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+
+   .contact-info {
+       display: flex;
+       align-items: center;
+       margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+   }
+
+   .contact-info a {
+       color: blue; /* Cambiar color a azul */
+       text-decoration: none; /* Eliminar decoración del texto */
+   }
+
+   .contact-info i {
+       margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+   }
+
+   /* Estilos para el texto de copyright */
+   .copyright p {
+       color: #fff; /* Color del texto */
+       
+       margin-left: 10%;
+       margin-right: auto;
+   }
+}
+
+/** width 412px */
+/* & TERMINADO */
+@media screen and (min-width:376px) and (max-width:412px)  {
+    #allBotones {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los botones */
+        align-items: center; /* Centra verticalmente los botones */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+    #quienesSomosTitle {
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+    }
+    .seccionBotones {
+        display: flex;
+    }
+    .contenido {
+        /* Estilos para el contenedor de la imagen */
+        text-align: center; /* Alinea el contenido al centro */
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+      
+    .contenido img {
+        /* Estilos para la imagen dentro del contenedor */
+        max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+        height: auto; /* Mantiene la proporción original de la imagen */
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boton2 {
+        padding: 10px 10px; /* Ajusta el relleno */
+        margin: 0 3px; /* Ajusta el margen */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    .imagen_bajo-subtitle {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        margin-bottom: 20px; /* Reduzco el margen inferior */
+    }
+
+    .imagen_bajo-subtitle iframe {
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        max-height: 100%; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 18px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    .boton2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    .subTitulo {
+        width: 100%;
+        max-width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+    
+    
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+    }
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 0;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 90%;
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: justify; /* Justifica el texto */
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+    .imagenQueHacemos1{
+        margin-top: 10%;
+    }
+    .image img{
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    .text-galeri-space{
+        margin-bottom: -20%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .text-contact-space{
+        width: 100%;
+        max-width: 80%;
+    }
+    .galeriaFotos{
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        display: block; /* Asegura el correcto espaciado entre las imágenes */
+        
+    }
+    
+    .titlecontacts{
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 10px;
+        transition: .5s;
+        margin-top: 90%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        
+        margin-left: 10%;
+        margin-right: auto;
+    }
+    #left{
+        margin-top: 0;
+    }
+    #right{
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width:315px) and (max-width:360px) {
+    #quienesSomosTitle{
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    
+}
+
+/** width 390px */
+/* & TERMINADO */
+@media screen and (min-width:377px) and (max-width:390px)  {
+    #quienesSomosTitle {
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+        
+    }
+    .Texto_QuienesSomos{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+
+}
+/** width 430px */
+/* & TERMINADO */
+@media screen and (min-width:390px) and (width:430px)  {
+
+    #quienesSomosTitle {
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+        
+    }
+    .Texto_QuienesSomos{
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+
+}
+/** width 430px */
+/* & TERMINADO */
+@media screen and (max-width:430px)  {
+
+    #quienesSomosTitle {
+        max-width: 100%;
+        margin-left: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+    }
+    
+
+    #allBotones {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los botones */
+        align-items: center; /* Centra verticalmente los botones */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+    
+    .seccionBotones {
+        display: flex;
+    }
+    
+    .boton2 {
+        padding: 5px 10px; /* Ajusta el relleno */
+        margin: 0 3px !important; /* Ajusta el margen */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 18px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+
+    .subTitulo {
+        width: 100%;
+        max-width: 70%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+    
+    .imagen_bajo-subtitle {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        margin-bottom: 20px; /* Reduzco el margen inferior */
+    }
+
+    .imagen_bajo-subtitle iframe {
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        height: auto; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #quienesSomosTitle {
+        width: 100%;
+        max-width: 70%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .container_texto img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.767);
+        
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 90%; /* Ancho del contenedor de imágenes */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 20px !important; /* Ajusta el margen inferior */
+        border-radius: 0 !important;
+    }
+    
+    .galeriaFotos{
+        margin-bottom: -10%;
+        width: 100%;
+        max-width: 80%;
+        
+    }
+    .carouselGaleria img{
+        width:calc(100%);
+        
+    }
+    .text-galeri-space{
+        margin-top: 20%;
+        margin-bottom: -10%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .text-contact-space{
+        width: 100%;
+        max-width: 80%;
+    }
+    .titlecontacts{
+        margin-top: 10px !important;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 12px;
+        transition: .5s;
+        margin-top: 60%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+
+}
+
+/** width 734 px*/
+
+@media screen and (min-width: 685px ) and (max-width: 734px) {
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 18px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    .boton2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    .subTitulo {
+        width: 100%;
+        max-width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+    #quienesSomosTitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+    }
+
+    .container_texto img {
+
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 0;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 90%;
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: justify; /* Justifica el texto */
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 90%; /* Ancho del contenedor de imágenes */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 50% ; /* Ajusta el margen inferior */
+        border-radius: 0 !important;
+    }
+    
+    .galeriaFotos{
+       
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img{
+        background-color: #000000;
+        margin-top: 20%;
+        width:calc(100%/3.2);
+        
+    }
+    .titlecontacts{
+        margin-top: 10px !important;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 50px;
+        transition: .5s;
+        margin-top: 50%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+
+}
+
+                                                    /** width 684 px*/
+
+                                    
+                                                    
+
+
+/** width 376 px*/
+
+@media screen and (min-width:735px) and (max-width: 736px){
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 24px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    .boton2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    .subTitulo {
+        width: 100%;
+        max-width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    #left{
+        margin-top: -10%;
+    }
+    #right{
+        margin-top: -10%;
+    }
+    #quienesSomosTitle {
+        margin-left: 10px !important;
+        width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+        text-align: center; /* Centra el texto */
+    }
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+    }
+
+    
+
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 0;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 90%;
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: justify; /* Justifica el texto */
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 90%; /* Ancho del contenedor de imágenes */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 50% ; /* Ajusta el margen inferior */
+        border-radius: 0 !important;
+    }
+    
+    .galeriaFotos{
+       
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img{
+        margin-top: 20%;
+        width:calc(100%/2);
+        margin-bottom: 40%;
+    }
+    .titlecontacts{
+        margin-top: 10px !important;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 50px;
+        transition: .5s;
+        margin-top: 50%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+
+}
+/** width 768 px*/
+
+
+                                                    /** width 1024 px*/
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+    #left{
+        margin-top: -5% !important;
+    }
+    #right{
+        margin-top: -5% !important;
+    }
+
+    .TituloQuienesSomos {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        margin-top: 20px; /* Ajusta el valor según necesites */
+        font-size: 30px;
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto; /* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    .boton2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    .subTitulo {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 28px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    
+   
+
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+    }
+
+    
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 0;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 90%;
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: justify; /* Justifica el texto */
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        width: 90%; /* Ancho del contenedor de imágenes */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        width: 100%; /* Ajusta el ancho de las imágenes */
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 10%  ; /* Ajusta el margen inferior */
+        border-radius: 0 !important;
+    }
+    
+    .galeriaFotos{
+        
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img{
+        margin-bottom: 10%;
+        width:calc(100%/2);
+        
+    }
+    .titlecontacts{
+        margin-top: -1% !important;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #left{
+        margin-top: -23%;
+    }
+    #right{
+        margin-top: -23%;
+    }
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 50px;
+        transition: .5s;
+        margin-top: 50%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+
+}
+                                                    /** width 1300px*/
+
+
+/*
+@media screen and  (max-width: 412px) and (max-height:661px){
+    .text-galeri-space{
+        margin-bottom: -10%;
+    }
+    .container_texto img {
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+*/
