@@ -2804,9 +2804,37 @@ h2 {
 
 }
 
-/** width 734 px*/
+/** width 767 px*/
+/* & TERMINADO */
 
-@media screen and (min-width: 685px ) and (max-width: 734px) {
+@media screen and (min-width: 431px ) and (max-width: 767px) {
+    
+    #quienesSomosTitle {
+        max-width: 100%;
+        margin-left: auto;
+        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
+    }
+    
+
+    #allBotones {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente los botones */
+        align-items: center; /* Centra verticalmente los botones */
+        overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    }
+    
+    .seccionBotones {
+        display: flex;
+    }
+    
+    .boton2 {
+        padding: 5px 10px; /* Ajusta el relleno */
+        margin: 0 3px !important; /* Ajusta el margen */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    
     .TituloQuienesSomos {
         width: 100%;
         max-width: 70%;
@@ -2820,14 +2848,10 @@ h2 {
         margin-left: auto; /* Mueve el elemento hacia la derecha */
         margin-right: auto; /* Mueve el elemento hacia la izquierda */
     }
-    .boton2{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #404040 !important;
-    }
-    
+
     .subTitulo {
         width: 100%;
-        max-width: 90%;
+        max-width: 70%;
         position: relative;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
@@ -2841,7 +2865,28 @@ h2 {
         margin-right: auto; /* Mueve el elemento hacia la izquierda */
     }
     
+    
+    .imagen_bajo-subtitle {
+        margin-bottom: 20px; /* Reduzco el margen inferior */
+    }
+
+    .imagen_bajo-subtitle iframe {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        max-width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     #quienesSomosTitle {
+        width: 90%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+        text-align: center; /* Centra el texto */
         margin-left: auto;
         margin-right: auto;
     }
@@ -2851,23 +2896,24 @@ h2 {
         flex-direction: column;
         align-items: center; /* Centra los elementos */
         text-align: justify; /* Justifica el texto */
+        padding-left: 14%;
+        padding-right: 14%;
     }
 
     .container_texto img {
-
         max-width: 100%;
         height: auto;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         padding-left: 10%;
         padding-right: 10%;
-        
+        margin-bottom: 5%;
     }
 
     .Texto_QuienesSomos {
         width: 90%;
         max-width: 100%;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
         color: white;
         padding: 15px;
         background-color: rgba(17, 15, 15, 0.5);
@@ -2882,6 +2928,8 @@ h2 {
         flex-direction: column;
         align-items: center; /* Centra los elementos */
         overflow: hidden;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .titleParrafo2 {
@@ -2894,23 +2942,22 @@ h2 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 24px;
         color: white;
-        padding: 10px;
         background-color: rgba(0, 0, 0, 0.767);
-        margin-bottom: 20px;
+        
     }
 
     .parrafo2 {
         width: 90%;
-        max-width: 90%;
-        margin-left: auto; /* Elimina el margen izquierdo */
+        max-width: 100%;
+        margin-left: auto;
         margin-right: auto;
-        margin-top: 20px; /* Ajusta el margen superior */
-        text-align: justify; /* Justifica el texto */
         color: white;
         padding: 15px;
         background-color: rgba(17, 15, 15, 0.5);
-        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-size: 18px;
         font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
     }
 
     .text-content {
@@ -2920,7 +2967,8 @@ h2 {
     }
 
     .image {
-        width: 90%; /* Ancho del contenedor de imágenes */
+        max-width: 80%;
+        width: 100%; /* Ancho del contenedor de imágenes */
         float: none; /* Evita el flotado para móviles */
         margin: 0 auto; /* Centra las imágenes */
     }
@@ -2930,20 +2978,34 @@ h2 {
         margin-top: 10px;
         width: 100%; /* Ajusta el ancho de las imágenes */
         display: block; /* Mostrar como bloque para evitar espacios adicionales */
-        margin-bottom: 50% ; /* Ajusta el margen inferior */
+        margin-bottom: 20px !important; /* Ajusta el margen inferior */
         border-radius: 0 !important;
     }
-    
+    #cuerpo{
+        width: 100%;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .galeriaFotos{
-       
+        margin-bottom: -10%;
         width: 100%;
         max-width: 80%;
     }
     .carouselGaleria img{
-        background-color: #000000;
-        margin-top: 20%;
-        width:calc(100%/3.2);
+        margin-top: 15%;
+        width:calc(100%);
         
+    }
+    .text-galeri-space{
+        margin-top: 20%;
+        margin-bottom: -10%;
+        width: 100%;
+        max-width: 80%;
+    }
+    .text-contact-space{
+        width: 100%;
+        max-width: 80%;
     }
     .titlecontacts{
         margin-top: 10px !important;
@@ -2963,13 +3025,13 @@ h2 {
         text-align: center;
         text-decoration: none;
         color: white;
-        margin: 0 50px;
+        margin: 0 12px;
         transition: .5s;
-        margin-top: 50%;
+        margin-top: 60%;
     }
     .imagenContactoFondo {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
-        background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
     .titleForm {
         margin: 0 auto;
@@ -3031,6 +3093,7 @@ h2 {
 
     .mapa {
         width: 100%;
+        max-width: 85%;
         margin-top: 20px;
         border-radius: 0.5rem; /* Reducir el radio del borde */
         padding: 5px; /* Ajustar el espaciado interno */
@@ -3069,313 +3132,22 @@ h2 {
     .copyright p {
         color: #fff; /* Color del texto */
         margin: 0;
-    }
-
-}
-
-                                                    /** width 684 px*/
-
-                                    
-                                                    
-
-
-/** width 376 px*/
-
-@media screen and (min-width:735px) and (max-width: 736px){
-    .TituloQuienesSomos {
-        width: 100%;
-        max-width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra verticalmente los elementos */
-        justify-content: center; /* Centra horizontalmente los elementos */
-        margin-top: 20px; /* Ajusta el valor según necesites */
-        font-size: 24px;
-        text-align: center; /* Centra horizontalmente el texto */
-        margin-left: auto; /* Mueve el elemento hacia la derecha */
-        margin-right: auto; /* Mueve el elemento hacia la izquierda */
-    }
-    .boton2{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: #404040 !important;
-    }
-    
-    .subTitulo {
-        width: 100%;
-        max-width: 90%;
-        position: relative;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        color: white;
-        padding: 20px;
-        background-color: rgba(17, 15, 15, 0.5);
-        border-radius: 10px;
-        margin-top: 20px; /* Puedes ajustar este valor según necesites */
-        text-align: center; /* Centra horizontalmente el texto */
-        margin-left: auto;/* Mueve el elemento hacia la derecha */
-        margin-right: auto; /* Mueve el elemento hacia la izquierda */
     }
     #left{
-        margin-top: -10%;
+        margin-top: 5%;
     }
     #right{
-        margin-top: -10%;
-    }
-    #quienesSomosTitle {
-        margin-left: 10px !important;
-        width: 90%;
-        position: relative;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
-        color: white;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.767);
-        margin-bottom: 20px;
-        text-align: center; /* Centra el texto */
-    }
-
-    .contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra los elementos */
-        text-align: justify; /* Justifica el texto */
-    }
-
-    
-
-    .Texto_QuienesSomos {
-        width: 90%;
-        max-width: 100%;
-        margin-left: 0;
-        color: white;
-        padding: 15px;
-        background-color: rgba(17, 15, 15, 0.5);
-        font-size: 18px;
-        font-family: 'Times New Roman', Times, serif;
-        text-align: justify; /* Justifica el texto */
-        margin-bottom: 10px;
-
-    }
-    .container2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra los elementos */
-        overflow: hidden;
-    }
-
-    .titleParrafo2 {
-        margin-left: auto; /* Elimina el margen izquierdo */
-        margin-right: auto;
-        width: 90%;
-        max-width: 90%;
-        text-align: center; /* Centra el texto */
-        position: relative;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 24px;
-        color: white;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.767);
-        margin-bottom: 20px;
-    }
-
-    .parrafo2 {
-        width: 90%;
-        max-width: 90%;
-        margin-left: auto; /* Elimina el margen izquierdo */
-        margin-right: auto;
-        margin-top: 20px; /* Ajusta el margen superior */
-        text-align: justify; /* Justifica el texto */
-        color: white;
-        padding: 15px;
-        background-color: rgba(17, 15, 15, 0.5);
-        font-size: 18px; /* Ajusta el tamaño del texto */
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .text-content {
-        width: 90%; /* Ancho del contenido de texto */
-        float: none; /* Evita el flotado para móviles */
-        margin: 0 auto; /* Centra el contenido */
-    }
-
-    .image {
-        width: 90%; /* Ancho del contenedor de imágenes */
-        float: none; /* Evita el flotado para móviles */
-        margin: 0 auto; /* Centra las imágenes */
-    }
-
-    .imagenQueHacemos2,
-    .imagenQueHacemos1 {
-        margin-top: 10px;
-        width: 100%; /* Ajusta el ancho de las imágenes */
-        display: block; /* Mostrar como bloque para evitar espacios adicionales */
-        margin-bottom: 50% ; /* Ajusta el margen inferior */
-        border-radius: 0 !important;
-    }
-    
-    .galeriaFotos{
-       
-        width: 100%;
-        max-width: 80%;
-    }
-    .carouselGaleria img{
-        margin-top: 20%;
-        width:calc(100%/2);
-        margin-bottom: 40%;
-    }
-    .titlecontacts{
-        margin-top: 10px !important;
-        width: 100%;
-        max-width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    ul li a {
-        display: block;
-        position: relative;
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        font-size: 40px;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        margin: 0 50px;
-        transition: .5s;
-        margin-top: 50%;
-    }
-    .imagenContactoFondo {
-        height: 15em; /* Reducir la altura para dispositivos más pequeños */
-        background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
-    }
-    .titleForm {
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 10px; /* Reducir el margen inferior */
-        max-width: 90%; /* Reducir el ancho máximo */
-        font-size: 24px; /* Ajustar el tamaño del texto */
-        background-color: transparent; /* Eliminar la opacidad del color de fondo */
-        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
-    
-    }
-
-
-    #formularioCons {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px; /* Ajustar el margen superior */
-    }
-
-    h2 {
-        font-size: 22px; /* Ajustar el tamaño del título */
-        margin-bottom: 20px; /* Ajustar el margen inferior */
-    }
-    .data {
-        max-width: 90%; /* Reducir el ancho máximo */
-        margin: 0 auto;
-        padding: 5px; /* Ajustar el espaciado interno */
-        border-radius: 0; /* Eliminar el borde redondeado */
-        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
-        margin-bottom: 10px; /* Ajustar el margen inferior */
-    }
-
-    .data p {
-        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
-    }
-
-    /* Estilos para los íconos */
-    .data i {
-        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
-    }
-    .formularioConsultas {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        max-width: 100%;
-        height: 1200px;
-        background-image: url("background_section/background.jpg");
-        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
-    }
-    .containerMap {
-        width: 100%;
-        max-width: 90%; /* Reducir el ancho máximo */
-        margin: 0 auto; /* Centrar el contenedor */
-        overflow: hidden; /* Evitar desbordamiento del contenido */
-    }
-
-    .mapa {
-        width: 100%;
-        margin-top: 20px;
-        border-radius: 0.5rem; /* Reducir el radio del borde */
-        padding: 5px; /* Ajustar el espaciado interno */
-        background-color: rgba(209, 202, 202, 0.377);
-        box-sizing: border-box; /* Incluir padding en el ancho */
-        margin-bottom: 50px;
-    }
-    .contact-section {
-        background-color: #a19386; /* Color de fondo */
-        z-index: 1;
-        position: relative;
-        height: auto; /* Ajustar altura automáticamente */
-        padding: 20px; /* Añadir espaciado interno */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .contact-info {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
-    }
-
-    .contact-info a {
-        color: blue; /* Cambiar color a azul */
-        text-decoration: none; /* Eliminar decoración del texto */
-    }
-
-    .contact-info i {
-        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
-    }
-
-    /* Estilos para el texto de copyright */
-    .copyright p {
-        color: #fff; /* Color del texto */
-        margin: 0;
+        margin-top: 5%;
     }
 
 }
-/** width 768 px*/
+/** width 1024 px*/
+/* & TERMINADO */
 
-
-                                                    /** width 1024 px*/
 
 @media screen and (min-width:768px) and (max-width: 1024px){
-    #left{
-        margin-top: -5% !important;
-    }
-    #right{
-        margin-top: -5% !important;
-    }
 
-    .TituloQuienesSomos {
-        width: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra verticalmente los elementos */
-        justify-content: center; /* Centra horizontalmente los elementos */
-        margin-top: 20px; /* Ajusta el valor según necesites */
-        font-size: 30px;
-        text-align: center; /* Centra horizontalmente el texto */
-        margin-left: auto; /* Mueve el elemento hacia la derecha */
-        margin-right: auto; /* Mueve el elemento hacia la izquierda */
-    }
+   
     .boton2{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #404040 !important;
@@ -3396,17 +3168,27 @@ h2 {
         margin-left: auto;/* Mueve el elemento hacia la derecha */
         margin-right: auto; /* Mueve el elemento hacia la izquierda */
     }
-    
-   
-
+    .imagen_bajo-subtitle iframe {
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        max-height: 100%; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .contenido img{
+        width: 100%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
     .contenido {
         display: flex;
         flex-direction: column;
         align-items: center; /* Centra los elementos */
         text-align: justify; /* Justifica el texto */
+        padding-left: 14%;
+        padding-right: 14%;
     }
-
-    
     .Texto_QuienesSomos {
         width: 90%;
         max-width: 100%;
@@ -3425,6 +3207,10 @@ h2 {
         flex-direction: column;
         align-items: center; /* Centra los elementos */
         overflow: hidden;
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+
     }
 
     .titleParrafo2 {
@@ -3463,18 +3249,21 @@ h2 {
     }
 
     .image {
-        width: 90%; /* Ancho del contenedor de imágenes */
         float: none; /* Evita el flotado para móviles */
         margin: 0 auto; /* Centra las imágenes */
     }
-
+    .image img{
+        width: 100%;
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .imagenQueHacemos2,
     .imagenQueHacemos1 {
         margin-top: 10px;
-        width: 100%; /* Ajusta el ancho de las imágenes */
         display: block; /* Mostrar como bloque para evitar espacios adicionales */
         margin-bottom: 10%  ; /* Ajusta el margen inferior */
-        border-radius: 0 !important;
+        
     }
     
     .galeriaFotos{
@@ -3483,12 +3272,13 @@ h2 {
         max-width: 80%;
     }
     .carouselGaleria img{
-        margin-bottom: 10%;
+        display: block;
+        margin-bottom: 50%;
         width:calc(100%/2);
         
     }
     .titlecontacts{
-        margin-top: -1% !important;
+        margin-top: -45%;
         width: 100%;
         max-width: 80%;
         margin-left: auto;
@@ -3571,7 +3361,7 @@ h2 {
     }
     .containerMap {
         width: 100%;
-        max-width: 90%; /* Reducir el ancho máximo */
+        max-width: 60%; /* Reducir el ancho máximo */
         margin: 0 auto; /* Centrar el contenedor */
         overflow: hidden; /* Evitar desbordamiento del contenido */
     }
@@ -3585,6 +3375,7 @@ h2 {
         box-sizing: border-box; /* Incluir padding en el ancho */
         margin-bottom: 50px;
     }
+    
     .contact-section {
         background-color: #a19386; /* Color de fondo */
         z-index: 1;
@@ -3619,4 +3410,281 @@ h2 {
     }
 
 }
-                                                    /** width 1300px*/
+
+/** width 1250 px*/
+/* & TERMINADO */
+
+@media screen and (min-width:1024px) and (max-width: 1300px){
+ 
+    .boton2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #404040 !important;
+    }
+    
+    .subTitulo {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 28px;
+        color: white;
+        padding: 20px;
+        background-color: rgba(17, 15, 15, 0.5);
+        border-radius: 10px;
+        margin-top: 20px; /* Puedes ajustar este valor según necesites */
+        text-align: center; /* Centra horizontalmente el texto */
+        margin-left: auto;/* Mueve el elemento hacia la derecha */
+        margin-right: auto; /* Mueve el elemento hacia la izquierda */
+    }
+    .imagen_bajo-subtitle iframe {
+        width: 100%;
+        max-width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+        max-height: 100%; /* Establece una altura más pequeña para el mapa */
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .contenido img{
+        width: 100%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        text-align: justify; /* Justifica el texto */
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+    .Texto_QuienesSomos {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 0;
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify; /* Justifica el texto */
+        margin-bottom: 10px;
+
+    }
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los elementos */
+        overflow: hidden;
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .titleParrafo2 {
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        width: 90%;
+        max-width: 90%;
+        text-align: center; /* Centra el texto */
+        position: relative;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.767);
+        margin-bottom: 20px;
+    }
+
+    .parrafo2 {
+        width: 90%;
+        max-width: 90%;
+        margin-left: auto; /* Elimina el margen izquierdo */
+        margin-right: auto;
+        margin-top: 20px; /* Ajusta el margen superior */
+        text-align: justify; /* Justifica el texto */
+        color: white;
+        padding: 15px;
+        background-color: rgba(17, 15, 15, 0.5);
+        font-size: 18px; /* Ajusta el tamaño del texto */
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .text-content {
+        width: 90%; /* Ancho del contenido de texto */
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .image {
+        float: none; /* Evita el flotado para móviles */
+        margin: 0 auto; /* Centra las imágenes */
+    }
+    .image img{
+        width: 100%;
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .imagenQueHacemos2,
+    .imagenQueHacemos1 {
+        margin-top: 10px;
+        display: block; /* Mostrar como bloque para evitar espacios adicionales */
+        margin-bottom: 10%  ; /* Ajusta el margen inferior */
+        
+    }
+    #cuerpo{
+        width: 100%;
+        max-width: 70%;
+        margin-bottom: 20%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .galeriaFotos{
+        
+        width: 100%;
+        max-width: 80%;
+    }
+    .carouselGaleria img{
+        margin-top: 2%;
+        display: block;
+        margin-bottom: 50%;
+        width:calc(100%/2);
+        
+        
+    }
+    
+    .titlecontacts{
+        margin-top: -45%;
+        width: 100%;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #left{
+        margin-top: -23%;
+    }
+    #right{
+        margin-top: -23%;
+    }
+    ul li a {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0 50px;
+        transition: .5s;
+        margin-top: 50%;
+    }
+    .imagenContactoFondo {
+        height: 15em; /* Reducir la altura para dispositivos más pequeños */
+        background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
+    }
+    .titleForm {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px; /* Reducir el margen inferior */
+        max-width: 90%; /* Reducir el ancho máximo */
+        font-size: 24px; /* Ajustar el tamaño del texto */
+        background-color: transparent; /* Eliminar la opacidad del color de fondo */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+    
+    }
+    
+
+    #formularioCons {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; /* Ajustar el margen superior */
+    }
+
+    h2 {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 20px; /* Ajustar el margen inferior */
+    }
+    .data {
+        max-width: 90%; /* Reducir el ancho máximo */
+        margin: 0 auto;
+        padding: 5px; /* Ajustar el espaciado interno */
+        border-radius: 0; /* Eliminar el borde redondeado */
+        background-color: rgba(255, 255, 255, 0.7); /* Color de fondo con opacidad */
+        margin-bottom: 10px; /* Ajustar el margen inferior */
+    }
+
+    .data p {
+        margin-bottom: 5px; /* Reducir el espacio entre los párrafos */
+    }
+
+    /* Estilos para los íconos */
+    .data i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+    .formularioConsultas {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        height: 1200px;
+        background-image: url("background_section/background.jpg");
+        padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
+    }
+    .containerMap {
+        width: 100%;
+        max-width: 60%; /* Reducir el ancho máximo */
+        margin: 0 auto; /* Centrar el contenedor */
+        overflow: hidden; /* Evitar desbordamiento del contenido */
+    }
+
+    .mapa {
+        width: 100%;
+        max-width: 50%;
+        margin-top: 20px;
+        border-radius: 0.5rem; /* Reducir el radio del borde */
+        padding: 5px; /* Ajustar el espaciado interno */
+        background-color: rgba(209, 202, 202, 0.377);
+        box-sizing: border-box; /* Incluir padding en el ancho */
+        margin-bottom: 50px;
+    }
+    
+    .contact-section {
+        background-color: #a19386; /* Color de fondo */
+        z-index: 1;
+        position: relative;
+        height: auto; /* Ajustar altura automáticamente */
+        padding: 20px; /* Añadir espaciado interno */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    .contact-info a {
+        color: blue; /* Cambiar color a azul */
+        text-decoration: none; /* Eliminar decoración del texto */
+    }
+
+    .contact-info i {
+        margin-right: 3px; /* Reducir el espacio entre el ícono y el texto */
+    }
+
+    /* Estilos para el texto de copyright */
+    .copyright p {
+        color: #fff; /* Color del texto */
+        margin: 0;
+    }
+}
