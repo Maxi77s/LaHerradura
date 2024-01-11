@@ -13,9 +13,10 @@ body {
     top: 0px; /* Altura deseada desde la parte superior */
     left: 0;
     width: 100%;
-    height: 650px;
+    height: 110vh;
     overflow: hidden;
     z-index: 1; /* Asegura que el carrusel esté detrás del contenido */
+    
 }
 
 .slide {
@@ -28,13 +29,16 @@ body {
     transition: opacity 1s ease-in-out;
     background-size: cover;
     background-position: center;
+    
 }
 
 .active {
     opacity: 1;
+    
 }
 .container {
     position: relative;
+    
 }
 
 .Titulo {
@@ -43,9 +47,13 @@ body {
     left: 50%; /* Coloca el título a la mitad del ancho */
     transform: translateX(-50%); /* Centra el título horizontalmente */
     z-index: 1; /* Asegura que esté sobre los slides */
-    padding: 10px; /* Ajusta el espacio alrededor del texto */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo con opacidad */
+    padding: 1px; /* Ajusta el espacio alrededor del texto */
+    background-color: rgba(223, 208, 208, 0.479); /* Fondo con opacidad */
+    transition: filter 0.3s;
     border-radius: 10px; /* Redondea las esquinas */
+}
+.Titulo:hover {
+    filter: brightness(120%) drop-shadow(0 0 10px rgba(182, 27, 27, 0.685));
 }
 
 /*BOTON N° 1 EN TITULO */
@@ -59,15 +67,18 @@ body {
     transform: translateX(-50%);
     z-index: 2;
     cursor: pointer;
-    }
-
+    transition: filter 0.3s;
+}
+#Boton1:hover{
+    filter: brightness(120%) drop-shadow(0 0 10px rgba(218, 201, 201, 0.685));
+}
 #allBotones {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 87.5%
+    font-size: 87.5%;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -148,7 +159,7 @@ body {
 
 .imagne_bajo-subtitle img {
     width: 100%;
-    max-width: ; /* Ajusta el ancho máximo de la imagen */
+
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
@@ -341,7 +352,7 @@ body {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 
 
 #cuerpo{
@@ -684,13 +695,22 @@ button {
     padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
 }
 
-.titleForm {
+#titleForm {
     width: 100%;
     margin: 0;
     padding: 0;
     font-size: 30px;
     background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con opacidad */
 }
+
+#mensaje-exito {
+        display: none;
+        color: green;
+        font-weight: bold;
+        padding: 10px; /* Añade espacio alrededor del mensaje */
+        margin-top: 10px; /* Puede ser necesario ajustar según tu diseño */
+}
+
 
 /* Estilos para el formulario */
 
@@ -728,7 +748,7 @@ body {
 /* Resto de tu CSS existente... */
 
 
-.titleForm {
+#titleForm {
     text-align: justify;
     margin: 0 auto;
     text-align: center;
@@ -862,6 +882,18 @@ h2 {
     color: #fff; /* Color del texto */
     margin: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Responsividad*/
@@ -1085,7 +1117,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -1397,7 +1429,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm{
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -1708,7 +1740,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -2013,7 +2045,7 @@ h2 {
        height: 15em; /* Reducir la altura para dispositivos más pequeños */
        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
    }
-   .titleForm {
+   #titleForm {
        margin: 0 auto;
        text-align: center;
        margin-bottom: 10px; /* Reducir el margen inferior */
@@ -2326,7 +2358,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm{
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -2702,7 +2734,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3033,7 +3065,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3308,7 +3340,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3586,7 +3618,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-    .titleForm {
+    #titleForm {
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3687,4 +3719,52 @@ h2 {
         color: #fff; /* Color del texto */
         margin: 0;
     }
+}
+
+
+@media screen and (min-width: 1367px) {
+    body {
+        max-width: 1366px; /* Limita el ancho para pantallas grandes */
+        margin: 0 auto; /* Centra el contenido */
+        background-image: url("background_section/background.jpg");
+        /* Otros estilos específicos para pantallas grandes */
+    }
+    .Titulo {
+        position: absolute;
+        top: 300px; /* Ajusta la posición vertical */
+        left: 50%; /* Coloca el título a la mitad del ancho */
+        transform: translateX(-50%); /* Centra el título horizontalmente */
+        
+    }
+    #Boton1 {
+        position: absolute;
+        padding: 0px 0px;
+        border: none;
+        background-color: transparent;
+        top: 620px; /* Ajusta la posición vertical */
+        left: 50%; /* Ajusta la posición horizontal */
+        transform: translateX(-50%);
+        z-index: 2;
+        cursor: pointer;
+        transition: filter 0.3s;
+    }
+    .carousel {
+        position: relative;
+        left: -29%;
+        width: 210vh; /* Ajuste para pantallas más grandes */
+        /* Otros estilos específicos para pantallas grandes */
+    }
+    .imagenContactoFondo {
+        position: relative;
+        width: 210vh;
+        left: -29%;
+    }
+    .seccionBotones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
+    }
+    
 }

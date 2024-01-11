@@ -162,6 +162,31 @@ function scrollToSection(sectionId) {
 const widthElement = document.querySelector('.width');
 const heightElement = document.querySelector('.height');
 
-// Función para actualizar el tamaño de la ventana
+function mostrarMensajeExito() {
+  // Mostrar el mensaje de éxito
+  var mensajeExito = document.getElementById("mensaje-exito");
+  mensajeExito.textContent = "¡Tu mensaje se ha enviado con éxito!";
+  mensajeExito.style.display = "block";
+}
 
+// Verificar si el mensaje debe mostrarse al cargar la página
+window.onload = function() {
+  var mensajeEnviado = sessionStorage.getItem("mensajeEnviado");
+  if (mensajeEnviado === "true") {
+    mostrarMensajeExito();
+    // Limpiar sessionStorage después de mostrar el mensaje
+    sessionStorage.removeItem("mensajeEnviado");
+  }
+};
 
+// Obtener el parámetro 'enviado' de la URL
+var urlParams = new URLSearchParams(window.location.search);
+var enviado = urlParams.get('enviado');
+
+// Mostrar el mensaje si el formulario se ha enviado
+if (enviado === "true") {
+  mostrarMensajeExito();
+  // Almacenar el estado del mensaje en sessionStorage
+  sessionStorage.setItem("mensajeEnviado", "true");
+  
+}
