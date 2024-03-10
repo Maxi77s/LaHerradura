@@ -4,8 +4,12 @@
     "ignore": [
       "firebase.json",
       "**/.*",
+<<<<<<< HEAD
       "**/node_modules/**",
       "/index.html"
+=======
+      "**/node_modules/**"
+>>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     ]
   }
 }
