@@ -1,10 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
     
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 }
 
 /* O en tu contenedor principal */
@@ -17,16 +14,10 @@ body {
     top: 0px; /* Altura deseada desde la parte superior */
     left: 0;
     width: 100%;
-<<<<<<< HEAD
     height: 110vh;
     overflow: hidden;
     z-index: 1; /* Asegura que el carrusel esté detrás del contenido */
     
-=======
-    height: 650px;
-    overflow: hidden;
-    z-index: 1; /* Asegura que el carrusel esté detrás del contenido */
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 }
 
 .slide {
@@ -39,25 +30,16 @@ body {
     transition: opacity 1s ease-in-out;
     background-size: cover;
     background-position: center;
-<<<<<<< HEAD
     
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 }
 
 .active {
     opacity: 1;
-<<<<<<< HEAD
     
 }
 .container {
     position: relative;
     
-=======
-}
-.container {
-    position: relative;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 }
 
 .Titulo {
@@ -66,7 +48,6 @@ body {
     left: 50%; /* Coloca el título a la mitad del ancho */
     transform: translateX(-50%); /* Centra el título horizontalmente */
     z-index: 1; /* Asegura que esté sobre los slides */
-<<<<<<< HEAD
     padding: 1px; /* Ajusta el espacio alrededor del texto */
     background-color: rgba(223, 208, 208, 0.479); /* Fondo con opacidad */
     transition: filter 0.3s;
@@ -75,12 +56,6 @@ body {
 .Titulo:hover {
     filter: brightness(120%) drop-shadow(0 0 10px rgba(182, 27, 27, 0.685));
 }
-=======
-    padding: 10px; /* Ajusta el espacio alrededor del texto */
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo con opacidad */
-    border-radius: 10px; /* Redondea las esquinas */
-}
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 
 /*BOTON N° 1 EN TITULO */
 #Boton1 {
@@ -93,34 +68,23 @@ body {
     transform: translateX(-50%);
     z-index: 2;
     cursor: pointer;
-<<<<<<< HEAD
     transition: filter 0.3s;
     transform: scale();
 }
 #Boton1:hover{
     filter: brightness(120%) drop-shadow(0 0 10px rgba(218, 201, 201, 0.685));
 }
-=======
-    }
-
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 #allBotones {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     font-size: 87.5%;
     letter-spacing: 1px;
     text-transform: uppercase;
     
     
-=======
-    font-size: 87.5%
-    letter-spacing: 1px;
-    text-transform: uppercase;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 }
 
 #allBotones.fixed {
@@ -129,11 +93,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 999; /* Asegúrate de que esté por encima de otros elementos */
-<<<<<<< HEAD
     background-color: rgba(151, 11, 11, 0.925); /* Fondo con transparencia */
-=======
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo con transparencia */
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra para destacar */
 }
 .boton2 {
@@ -145,21 +105,12 @@ body {
     transition: all .3s ease;
     font-size: 15px;
     background-color: transparent;
-<<<<<<< HEAD
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: black !important;
 }
 
 .boton2:hover {
     transform: scale(1.2);
-=======
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #404040 !important;
-}
-
-.boton2:hover {
-    background-color: rgba(224, 78, 97, 0.774) !important;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 }
 
 
@@ -212,11 +163,7 @@ body {
 
 .imagne_bajo-subtitle img {
     width: 100%;
-<<<<<<< HEAD
 
-=======
-    max-width: ; /* Ajusta el ancho máximo de la imagen */
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     height: auto; /* Mantiene la proporción de la imagen */
 }
 
@@ -409,11 +356,7 @@ body {
 
 
 
-<<<<<<< HEAD
 
-=======
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 
 
 #cuerpo{
@@ -756,11 +699,7 @@ button {
     padding-top: 100px; /* Ajusta el espacio entre el borde superior y el título */
 }
 
-<<<<<<< HEAD
 #titleForm {
-=======
-.titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     width: 100%;
     margin: 0;
     padding: 0;
@@ -768,7 +707,6 @@ button {
     background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con opacidad */
 }
 
-<<<<<<< HEAD
 #mensaje-exito {
         display: none;
         color: green;
@@ -778,8 +716,6 @@ button {
 }
 
 
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 /* Estilos para el formulario */
 
 /* Ajustes generales */
@@ -816,11 +752,7 @@ body {
 /* Resto de tu CSS existente... */
 
 
-<<<<<<< HEAD
 #titleForm {
-=======
-.titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     text-align: justify;
     margin: 0 auto;
     text-align: center;
@@ -956,7 +888,6 @@ h2 {
 }
 
 
-<<<<<<< HEAD
 .navbar-container {
     background-color: transparent; /* Fondo azul del contenedor en dispositivos móviles */
 }
@@ -998,13 +929,10 @@ h2 {
 .navbar-container{
     background-color:#A19386 !important;
 }
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 /*Responsividad*/
 
 
 /**width 375*/
-<<<<<<< HEAD
 /* & TERMINADO */}
 @media screen and (max-width: 375px) {
     .imgPortada{
@@ -1014,14 +942,6 @@ h2 {
     #quienesSomosTitle {
         justify-content: center;
         
-=======
-/* & TERMINADO */
-@media screen and (max-width: 375px) {
-    #quienesSomosTitle {
-        max-width: 100%;
-        margin-left: auto;
-        margin: 20px auto ; /* Margen vertical de 20px y horizontal automático */
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     }
     
 
@@ -1046,11 +966,7 @@ h2 {
     
     .TituloQuienesSomos {
         width: 100%;
-<<<<<<< HEAD
         max-width: 75% ;
-=======
-        max-width: 70%;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         display: flex;
         flex-direction: column;
         align-items: center; /* Centra verticalmente los elementos */
@@ -1064,21 +980,13 @@ h2 {
 
     .subTitulo {
         width: 100%;
-<<<<<<< HEAD
         max-width: 75% ;
-=======
-        max-width: 70%;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         position: relative;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
         color: white;
         padding: 20px;
         background-color: rgba(17, 15, 15, 0.5);
-<<<<<<< HEAD
-=======
-        border-radius: 10px;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin-top: 20px; /* Puedes ajustar este valor según necesites */
         text-align: center; /* Centra horizontalmente el texto */
         margin-left: auto;/* Mueve el elemento hacia la derecha */
@@ -1244,11 +1152,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm {
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -1560,11 +1464,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm{
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -1875,11 +1775,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm {
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -2184,11 +2080,7 @@ h2 {
        height: 15em; /* Reducir la altura para dispositivos más pequeños */
        background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
    }
-<<<<<<< HEAD
    #titleForm {
-=======
-   .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
        margin: 0 auto;
        text-align: center;
        margin-bottom: 10px; /* Reducir el margen inferior */
@@ -2501,11 +2393,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm{
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -2658,26 +2546,20 @@ h2 {
         margin-right: auto;
         
     }
-<<<<<<< HEAD
     .TituloQuienesSomos{
         width: 100%;
         max-width: 45%;
     }
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     
 
 }
 /** width 430px */
 /* & TERMINADO */
 @media screen and (max-width:430px)  {
-<<<<<<< HEAD
     .imgPortada{
         max-width: 100%;
         max-width: 70%;
     }
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 
     #quienesSomosTitle {
         max-width: 100%;
@@ -2692,13 +2574,9 @@ h2 {
         align-items: center; /* Centra verticalmente los botones */
         overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
     }
-<<<<<<< HEAD
     .icon{
         transform: scale(1.2);
     }
-=======
-    
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     .seccionBotones {
         display: flex;
     }
@@ -2713,11 +2591,7 @@ h2 {
     
     .TituloQuienesSomos {
         width: 100%;
-<<<<<<< HEAD
         max-width: 80%;
-=======
-        max-width: 70%;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         display: flex;
         flex-direction: column;
         align-items: center; /* Centra verticalmente los elementos */
@@ -2731,11 +2605,7 @@ h2 {
 
     .subTitulo {
         width: 100%;
-<<<<<<< HEAD
         max-width: 80%;
-=======
-        max-width: 70%;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         position: relative;
         font-family: 'Times New Roman', Times, serif;
         font-size: 18px;
@@ -2909,11 +2779,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm {
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3014,10 +2880,6 @@ h2 {
     }
 
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 /** width 767 px*/
 /* & TERMINADO */
 
@@ -3247,11 +3109,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: scroll; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm {
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3364,7 +3222,6 @@ h2 {
 
 
 @media screen and (min-width:768px) and (max-width: 1024px){
-<<<<<<< HEAD
     .Titulo{
         margin-top: 35%;
     }
@@ -3403,10 +3260,6 @@ h2 {
         width: 100%;
         max-width: 75%;
     }
-=======
-
-   
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
     .boton2{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: #404040 !important;
@@ -3567,11 +3420,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm {
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3849,11 +3698,7 @@ h2 {
         height: 15em; /* Reducir la altura para dispositivos más pequeños */
         background-attachment: fixed; /* Cambiar la forma en que la imagen de fondo se comporta al desplazarse */
     }
-<<<<<<< HEAD
     #titleForm {
-=======
-    .titleForm {
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin: 0 auto;
         text-align: center;
         margin-bottom: 10px; /* Reducir el margen inferior */
@@ -3913,11 +3758,7 @@ h2 {
 
     .mapa {
         width: 100%;
-<<<<<<< HEAD
         max-width: 80%;
-=======
-        max-width: 50%;
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
         margin-top: 20px;
         border-radius: 0.5rem; /* Reducir el radio del borde */
         padding: 5px; /* Ajustar el espaciado interno */
@@ -3958,7 +3799,6 @@ h2 {
         color: #fff; /* Color del texto */
         margin: 0;
     }
-<<<<<<< HEAD
 }
 
 
@@ -3981,7 +3821,8 @@ h2 {
     }
     
 }
-@media screen  and (min-width:768px) and (max-width:1020px){
+
+@media screen  and (min-width:768px) and (max-width:1024px){
     .Titulo{
         width: 100%;
         max-width: 30%;
@@ -4036,7 +3877,26 @@ h2 {
 
     /* Evita que los botones sobrepasen el contenedor */
    
-    
-=======
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
+    #Boton1 {
+        display: none; /* Oculta el botón en dispositivos con un ancho máximo de 768px */
+    }
+}
+
+
+
+.carousel {
+    position: relative;
+}
+
+.Titulo, #Boton1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw; /* Establece el tamaño máximo relativo al ancho de la ventana */
+    width: auto; /* Para permitir que los elementos se ajusten según su contenido */
+}
+
+#Boton1{
+    margin-top: 200px;
 }

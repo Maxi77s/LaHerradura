@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 1
-=======
-// Clase CarruselPresentacion
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
 class CarruselPresentacion {
   constructor(slides, intervalTime = 5000) {
     this.slides = slides;
@@ -140,11 +136,7 @@ window.addEventListener("scroll", function() {
             allBotones.style.left = '50%';
             allBotones.style.transform = 'translateX(-50%)';
             allBotones.style.zIndex = '999';
-<<<<<<< HEAD
             allBotones.style.backgroundColor = '#9E9085';
-=======
-            allBotones.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
             allBotones.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)';
         } else {
             allBotones.style.position = 'static';
@@ -170,7 +162,6 @@ function scrollToSection(sectionId) {
 const widthElement = document.querySelector('.width');
 const heightElement = document.querySelector('.height');
 
-<<<<<<< HEAD
 function mostrarMensajeExito() {
   // Mostrar el mensaje de éxito
   var mensajeExito = document.getElementById("mensaje-exito");
@@ -233,8 +224,3 @@ $(document).ready(function () {
       });
   });
 });
-=======
-// Función para actualizar el tamaño de la ventana
-
-
->>>>>>> 83d59ac69f549537842f8400f4f6a107ca8ebec6
