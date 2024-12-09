@@ -17,6 +17,4 @@ Tecnologías Utilizadas
 • CSS3
 • JavaScript
 
-Contacto
-Para consultas adicionales, puedes ponerte en contacto con nosotros a través de nuestras redes sociales o enviar un correo electrónico a laherraduranievas@gmail.com
-¡Esperamos que disfrutes usando y contribuyendo a La Herradura!
+
